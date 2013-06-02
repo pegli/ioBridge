@@ -47,8 +47,8 @@
 		DA24C945175BC2CE00BCAA3A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C932175BC2CE00BCAA3A /* UIImageView+AFNetworking.m */; };
 		DA24C947175BC31100BCAA3A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA24C946175BC31100BCAA3A /* SystemConfiguration.framework */; };
 		DA24C949175BC31900BCAA3A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */; };
-		DA24C94C175BC40A00BCAA3A /* DeviceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C94A175BC40A00BCAA3A /* DeviceProxy.h */; };
-		DA24C94D175BC40A00BCAA3A /* DeviceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C94B175BC40A00BCAA3A /* DeviceProxy.m */; };
+		DA94CAA8175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA94CAA6175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h */; };
+		DA94CAA9175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94CAA7175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +89,8 @@
 		DA24C932175BC2CE00BCAA3A /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		DA24C946175BC31100BCAA3A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		DA24C94A175BC40A00BCAA3A /* DeviceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceProxy.h; path = Classes/DeviceProxy.h; sourceTree = "<group>"; };
-		DA24C94B175BC40A00BCAA3A /* DeviceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceProxy.m; path = Classes/DeviceProxy.m; sourceTree = "<group>"; };
+		DA94CAA6175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppersonlabsIobridgeDeviceProxy.h; path = Classes/AppersonlabsIobridgeDeviceProxy.h; sourceTree = "<group>"; };
+		DA94CAA7175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppersonlabsIobridgeDeviceProxy.m; path = Classes/AppersonlabsIobridgeDeviceProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +142,8 @@
 			children = (
 				24DD6CF71134B3F500162E58 /* AppersonlabsIobridgeModule.h */,
 				24DD6CF81134B3F500162E58 /* AppersonlabsIobridgeModule.m */,
-				DA24C94A175BC40A00BCAA3A /* DeviceProxy.h */,
-				DA24C94B175BC40A00BCAA3A /* DeviceProxy.m */,
+				DA94CAA6175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h */,
+				DA94CAA7175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 				DA24C940175BC2CE00BCAA3A /* AFURLConnectionOperation.h in Headers */,
 				DA24C942175BC2CE00BCAA3A /* AFXMLRequestOperation.h in Headers */,
 				DA24C944175BC2CE00BCAA3A /* UIImageView+AFNetworking.h in Headers */,
-				DA24C94C175BC40A00BCAA3A /* DeviceProxy.h in Headers */,
+				DA94CAA8175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +292,7 @@
 				DA24C941175BC2CE00BCAA3A /* AFURLConnectionOperation.m in Sources */,
 				DA24C943175BC2CE00BCAA3A /* AFXMLRequestOperation.m in Sources */,
 				DA24C945175BC2CE00BCAA3A /* UIImageView+AFNetworking.m in Sources */,
-				DA24C94D175BC40A00BCAA3A /* DeviceProxy.m in Sources */,
+				DA94CAA9175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

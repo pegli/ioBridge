@@ -16,24 +16,17 @@ win.open();
 var iobridge = require('appersonlabs.iobridge');
 Ti.API.info("module is => " + iobridge);
 
-label.text = iobridge.example();
+var device = iobridge.createDevice({
+  apikey: "A4VPPSNH49U6KGBP",
+  serial: "0002C312381E9E86"
+});
+label.text = device.apikey;
 
-Ti.API.info("module exampleProp is => " + iobridge.exampleProp);
-iobridge.exampleProp = "This is a test value";
-
-if (Ti.Platform.name == "android") {
-	var proxy = iobridge.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
-
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
-}
-
+device.fetchConnectionState(function(err, data) {
+  if (!err) {
+    label.text = "connection state: "+JSON.stringify(data);
+  }
+  else {
+    label.text = "connection state error: "+JSON.stringify(err);
+  }
+});

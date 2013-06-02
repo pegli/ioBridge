@@ -10,4 +10,6 @@
 {
 }
 
++ (NSDictionary *)errorAsDict:(NSError *)err;
+
 @end

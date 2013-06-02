@@ -15,13 +15,19 @@
 #define kAPIKeyHeaderName @"X-APIKEY"
 
 #define kConnectionStateResource @"gateway/request/state"
+#define kReadGPIORegisterResource @"gateway/request/register/read"
+#define kWriteGPIORegisterResource @"gateway/request/register/write"
+#define kSendDataResource @"gateway/send"
+
+#define kDefaultChannel @"2"
 
 typedef void (^JsonSuccess)(NSURLRequest *request, NSHTTPURLResponse *response, id JSON);
 typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON);
 
-
 @interface AppersonlabsIobridgeDeviceProxy ()
 @property (nonatomic, strong) AFHTTPClient * client;
+- (void)sendGETJSONRequestWithPath:(NSString *)path parameters:(NSDictionary *)params callback:(KrollCallback *)callback;
+- (void)sendPOSTJSONRequestWithPath:(NSString *)path parameters:(NSDictionary *)params callback:(KrollCallback *)callback;
 @end
 
 @implementation AppersonlabsIobridgeDeviceProxy
@@ -50,8 +56,70 @@ typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, 
     KrollCallback * callback;
     ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 0, KrollCallback);
     
-    NSDictionary * params = [NSDictionary dictionaryWithObjectsAndKeys:self.apikey, @"apikey", self.serial, @"serial", nil];
-    NSMutableURLRequest * req = [self.client requestWithMethod:@"GET" path:kConnectionStateResource parameters:params];
+    NSDictionary * params = [NSDictionary dictionaryWithObjectsAndKeys:
+                             self.apikey, @"apikey",
+                             self.serial, @"serial",
+                             nil];
+    [self sendGETJSONRequestWithPath:kConnectionStateResource parameters:params callback:callback];
+}
+
+- (void)readGPIORegister:(id)args {
+    NSString * registerName;
+    KrollCallback * callback;
+    ENSURE_ARG_AT_INDEX(registerName, args, 0, NSString)
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 1, KrollCallback);
+    
+    NSDictionary * params = [NSDictionary dictionaryWithObjectsAndKeys:
+                             kDefaultChannel, @"channel",
+                             self.serial, @"serial",
+                             registerName, @"register",
+                             nil];
+    [self sendPOSTJSONRequestWithPath:kReadGPIORegisterResource parameters:params callback:callback];
+}
+
+- (void)sendData:(id)args {
+    NSString * payload;
+    NSString * encoding;
+    KrollCallback * callback;
+    ENSURE_ARG_AT_INDEX(payload, args, 0, NSString)
+    ENSURE_ARG_OR_NIL_AT_INDEX(encoding, args, 1, NSString)
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback)
+    
+    NSDictionary * params = [NSDictionary dictionaryWithObjectsAndKeys:
+                             kDefaultChannel, @"channel",
+                             self.serial, @"serial",
+                             (encoding ? encoding : @"plain"), @"encoding",
+                             payload, @"payload",
+                             nil];
+    [self sendPOSTJSONRequestWithPath:kSendDataResource parameters:params callback:callback];
+    
+}
+
+- (void)writeGPIORegister:(id)args {
+    NSString * registerName;
+    NSString * content;
+    KrollCallback * callback;
+    ENSURE_ARG_AT_INDEX(registerName, args, 0, NSString)
+    ENSURE_ARG_AT_INDEX(content, args, 1, NSString)
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback);
+    
+    NSDictionary * params = [NSDictionary dictionaryWithObjectsAndKeys:
+                             kDefaultChannel, @"channel",
+                             self.serial, @"serial",
+                             registerName, @"register",
+                             content, @"content",
+                             nil];
+    [self sendPOSTJSONRequestWithPath:kWriteGPIORegisterResource parameters:params callback:callback];
+}
+
+// TODO stream events
+
+#pragma mark JSON Request Utilities
+
+// TODO maybe move into subclass of AFHTTPClient?
+
+- (void)sendGETJSONRequestWithPath:(NSString *)path parameters:(NSDictionary *)params callback:(KrollCallback *)callback {
+    NSMutableURLRequest * req = [self.client requestWithMethod:@"GET" path:path parameters:params];
     
     JsonSuccess success = ^(NSURLRequest * request, NSHTTPURLResponse * response, id JSON) {
         TiThreadPerformOnMainThread(^{
@@ -69,18 +137,25 @@ typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, 
     [self.client enqueueHTTPRequestOperation:op];
 }
 
-- (void)readGPIORegister:(id)args {
+- (void)sendPOSTJSONRequestWithPath:(NSString *)path parameters:(NSDictionary *)params callback:(KrollCallback *)callback {
+    NSMutableURLRequest * req = [self.client requestWithMethod:@"POST" path:path parameters:params];
+    [req setHTTPBody:[NSJSONSerialization dataWithJSONObject:params options:nil error:nil]];
+    [req addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     
-}
-
-- (void)sendData:(id)args {
+    JsonSuccess success = ^(NSURLRequest * request, NSHTTPURLResponse * response, id JSON) {
+        TiThreadPerformOnMainThread(^{
+            [callback call:[NSArray arrayWithObjects:[NSNull null], JSON, nil] thisObject:nil];
+        }, NO);
+    };
     
-}
-
-- (void)writeGPIORegister:(id)args {
+    JsonFailure failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        TiThreadPerformOnMainThread(^{
+            [callback call:[NSArray arrayWithObjects:[AppersonlabsIobridgeModule errorAsDict:error], JSON, nil] thisObject:nil];
+        }, NO);
+    };
     
+    AFJSONRequestOperation * op = [AFJSONRequestOperation JSONRequestOperationWithRequest:req success:success failure:failure];
+    [self.client enqueueHTTPRequestOperation:op];
 }
-
-// TODO stream events
 
 @end

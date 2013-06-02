@@ -1,0 +1,7 @@
+tmp
+bin
+build
+*.zip
+.*
+iobridge.xcodeproj/project.xcworkspace
+iobridge.xcodeproj/xcuserdata

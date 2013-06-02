@@ -1,0 +1,3 @@
+[submodule "mobile/ios/vendor/AFNetworking"]
+	path = mobile/ios/vendor/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git

@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* AppersonlabsIobridgeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* AppersonlabsIobridgeModule.h */; };
+		24DD6CFA1134B3F500162E58 /* AppersonlabsIobridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* AppersonlabsIobridgeModule.m */; };
+		AA747D9F0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		DA24C933175BC2CE00BCAA3A /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C920175BC2CE00BCAA3A /* AFHTTPClient.h */; };
+		DA24C934175BC2CE00BCAA3A /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C921175BC2CE00BCAA3A /* AFHTTPClient.m */; };
+		DA24C935175BC2CE00BCAA3A /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C922175BC2CE00BCAA3A /* AFHTTPRequestOperation.h */; };
+		DA24C936175BC2CE00BCAA3A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C923175BC2CE00BCAA3A /* AFHTTPRequestOperation.m */; };
+		DA24C937175BC2CE00BCAA3A /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C924175BC2CE00BCAA3A /* AFImageRequestOperation.h */; };
+		DA24C938175BC2CE00BCAA3A /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C925175BC2CE00BCAA3A /* AFImageRequestOperation.m */; };
+		DA24C939175BC2CE00BCAA3A /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C926175BC2CE00BCAA3A /* AFJSONRequestOperation.h */; };
+		DA24C93A175BC2CE00BCAA3A /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C927175BC2CE00BCAA3A /* AFJSONRequestOperation.m */; };
+		DA24C93B175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C928175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h */; };
+		DA24C93C175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C929175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m */; };
+		DA24C93D175BC2CE00BCAA3A /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C92A175BC2CE00BCAA3A /* AFNetworking.h */; };
+		DA24C93E175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C92B175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h */; };
+		DA24C93F175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C92C175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m */; };
+		DA24C940175BC2CE00BCAA3A /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C92D175BC2CE00BCAA3A /* AFURLConnectionOperation.h */; };
+		DA24C941175BC2CE00BCAA3A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C92E175BC2CE00BCAA3A /* AFURLConnectionOperation.m */; };
+		DA24C942175BC2CE00BCAA3A /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C92F175BC2CE00BCAA3A /* AFXMLRequestOperation.h */; };
+		DA24C943175BC2CE00BCAA3A /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C930175BC2CE00BCAA3A /* AFXMLRequestOperation.m */; };
+		DA24C944175BC2CE00BCAA3A /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C931175BC2CE00BCAA3A /* UIImageView+AFNetworking.h */; };
+		DA24C945175BC2CE00BCAA3A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C932175BC2CE00BCAA3A /* UIImageView+AFNetworking.m */; };
+		DA24C947175BC31100BCAA3A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA24C946175BC31100BCAA3A /* SystemConfiguration.framework */; };
+		DA24C949175BC31900BCAA3A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */; };
+		DA24C94C175BC40A00BCAA3A /* DeviceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C94A175BC40A00BCAA3A /* DeviceProxy.h */; };
+		DA24C94D175BC40A00BCAA3A /* DeviceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C94B175BC40A00BCAA3A /* DeviceProxy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = iobridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* AppersonlabsIobridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppersonlabsIobridgeModule.h; path = Classes/AppersonlabsIobridgeModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* AppersonlabsIobridgeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppersonlabsIobridgeModule.m; path = Classes/AppersonlabsIobridgeModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppersonlabsIobridge_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libAppersonlabsIobridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppersonlabsIobridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA24C920175BC2CE00BCAA3A /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		DA24C921175BC2CE00BCAA3A /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		DA24C922175BC2CE00BCAA3A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		DA24C923175BC2CE00BCAA3A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		DA24C924175BC2CE00BCAA3A /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		DA24C925175BC2CE00BCAA3A /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		DA24C926175BC2CE00BCAA3A /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		DA24C927175BC2CE00BCAA3A /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		DA24C928175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		DA24C929175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		DA24C92A175BC2CE00BCAA3A /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		DA24C92B175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		DA24C92C175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		DA24C92D175BC2CE00BCAA3A /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		DA24C92E175BC2CE00BCAA3A /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		DA24C92F175BC2CE00BCAA3A /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		DA24C930175BC2CE00BCAA3A /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		DA24C931175BC2CE00BCAA3A /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		DA24C932175BC2CE00BCAA3A /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		DA24C946175BC31100BCAA3A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DA24C94A175BC40A00BCAA3A /* DeviceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceProxy.h; path = Classes/DeviceProxy.h; sourceTree = "<group>"; };
+		DA24C94B175BC40A00BCAA3A /* DeviceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceProxy.m; path = Classes/DeviceProxy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA24C949175BC31900BCAA3A /* MobileCoreServices.framework in Frameworks */,
+				DA24C947175BC31100BCAA3A /* SystemConfiguration.framework in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libAppersonlabsIobridge.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* iobridge */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				DA24C91E175BC2A500BCAA3A /* Vendor */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = iobridge;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */,
+				DA24C946175BC31100BCAA3A /* SystemConfiguration.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24DD6CF71134B3F500162E58 /* AppersonlabsIobridgeModule.h */,
+				24DD6CF81134B3F500162E58 /* AppersonlabsIobridgeModule.m */,
+				DA24C94A175BC40A00BCAA3A /* DeviceProxy.h */,
+				DA24C94B175BC40A00BCAA3A /* DeviceProxy.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DA24C91E175BC2A500BCAA3A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				DA24C91F175BC2CE00BCAA3A /* AFNetworking */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		DA24C91F175BC2CE00BCAA3A /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DA24C920175BC2CE00BCAA3A /* AFHTTPClient.h */,
+				DA24C921175BC2CE00BCAA3A /* AFHTTPClient.m */,
+				DA24C922175BC2CE00BCAA3A /* AFHTTPRequestOperation.h */,
+				DA24C923175BC2CE00BCAA3A /* AFHTTPRequestOperation.m */,
+				DA24C924175BC2CE00BCAA3A /* AFImageRequestOperation.h */,
+				DA24C925175BC2CE00BCAA3A /* AFImageRequestOperation.m */,
+				DA24C926175BC2CE00BCAA3A /* AFJSONRequestOperation.h */,
+				DA24C927175BC2CE00BCAA3A /* AFJSONRequestOperation.m */,
+				DA24C928175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h */,
+				DA24C929175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m */,
+				DA24C92A175BC2CE00BCAA3A /* AFNetworking.h */,
+				DA24C92B175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h */,
+				DA24C92C175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m */,
+				DA24C92D175BC2CE00BCAA3A /* AFURLConnectionOperation.h */,
+				DA24C92E175BC2CE00BCAA3A /* AFURLConnectionOperation.m */,
+				DA24C92F175BC2CE00BCAA3A /* AFXMLRequestOperation.h */,
+				DA24C930175BC2CE00BCAA3A /* AFXMLRequestOperation.m */,
+				DA24C931175BC2CE00BCAA3A /* UIImageView+AFNetworking.h */,
+				DA24C932175BC2CE00BCAA3A /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = vendor/AFNetworking/AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* AppersonlabsIobridgeModule.h in Headers */,
+				DA24C933175BC2CE00BCAA3A /* AFHTTPClient.h in Headers */,
+				DA24C935175BC2CE00BCAA3A /* AFHTTPRequestOperation.h in Headers */,
+				DA24C937175BC2CE00BCAA3A /* AFImageRequestOperation.h in Headers */,
+				DA24C939175BC2CE00BCAA3A /* AFJSONRequestOperation.h in Headers */,
+				DA24C93B175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h in Headers */,
+				DA24C93D175BC2CE00BCAA3A /* AFNetworking.h in Headers */,
+				DA24C93E175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h in Headers */,
+				DA24C940175BC2CE00BCAA3A /* AFURLConnectionOperation.h in Headers */,
+				DA24C942175BC2CE00BCAA3A /* AFXMLRequestOperation.h in Headers */,
+				DA24C944175BC2CE00BCAA3A /* UIImageView+AFNetworking.h in Headers */,
+				DA24C94C175BC40A00BCAA3A /* DeviceProxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* iobridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iobridge" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iobridge;
+			productName = iobridge;
+			productReference = D2AAC07E0554694100DB518D /* libAppersonlabsIobridge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iobridge" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* iobridge */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* iobridge */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DD6CFA1134B3F500162E58 /* AppersonlabsIobridgeModule.m in Sources */,
+				DA24C934175BC2CE00BCAA3A /* AFHTTPClient.m in Sources */,
+				DA24C936175BC2CE00BCAA3A /* AFHTTPRequestOperation.m in Sources */,
+				DA24C938175BC2CE00BCAA3A /* AFImageRequestOperation.m in Sources */,
+				DA24C93A175BC2CE00BCAA3A /* AFJSONRequestOperation.m in Sources */,
+				DA24C93C175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m in Sources */,
+				DA24C93F175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m in Sources */,
+				DA24C941175BC2CE00BCAA3A /* AFURLConnectionOperation.m in Sources */,
+				DA24C943175BC2CE00BCAA3A /* AFXMLRequestOperation.m in Sources */,
+				DA24C945175BC2CE00BCAA3A /* UIImageView+AFNetworking.m in Sources */,
+				DA24C94D175BC40A00BCAA3A /* DeviceProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* iobridge */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/AppersonlabsIobridge.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppersonlabsIobridge_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AppersonlabsIobridge;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/AppersonlabsIobridge.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppersonlabsIobridge_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AppersonlabsIobridge;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/AppersonlabsIobridge.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppersonlabsIobridge_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AppersonlabsIobridge;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/AppersonlabsIobridge.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppersonlabsIobridge_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AppersonlabsIobridge;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iobridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iobridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

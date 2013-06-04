@@ -12,21 +12,6 @@ var win = Ti.UI.createWindow({
 	layout: "vertical"
 });
 
-var connStateBtn = Ti.UI.createButton({
-  title: "Conn State"
-});
-connStateBtn.addEventListener("click", function(e) {
-  device.fetchConnectionState(function(err, data) {
-    if (!err) {
-      label.text = "connection state: "+JSON.stringify(data);
-    }
-    else {
-      label.text = "connection state error: "+JSON.stringify(err);
-    }
-  });
-});
-win.add(connStateBtn);
-
 // channel
 var channelView = Ti.UI.createView({
   layout: "horizontal",
@@ -107,6 +92,44 @@ writeBtn.addEventListener('click', function() {
   });
 })
 buttonView.add(writeBtn);
+
+var connStateBtn = Ti.UI.createButton({
+  title: "Conn State"
+});
+connStateBtn.addEventListener("click", function(e) {
+  device.fetchConnectionState(function(err, data) {
+    if (!err) {
+      label.text = "connection state: "+JSON.stringify(data);
+    }
+    else {
+      label.text = "connection state error: "+JSON.stringify(err);
+    }
+  });
+});
+buttonView.add(connStateBtn);
+
+var streaming = false;
+var streamToggleBtn = Ti.UI.createButton({
+  title: "Start Streaming"
+});
+streamToggleBtn.addEventListener("click", function() {
+  var listener = function(e) {
+    label.text = JSON.stringify(e);
+  };
+  
+  if (streaming) {
+    device.removeEventListener("stream", listener);
+    streamToggleBtn.title = "Start Streaming";
+    streaming = false;
+  }
+  else {
+    device.addEventListener("stream", listener);
+    streamToggleBtn.title = "Stop Streaming";
+    streaming = true;
+  }
+});
+buttonView.add(streamToggleBtn);
+
 win.add(buttonView);
 
 var label = Ti.UI.createLabel();

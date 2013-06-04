@@ -49,6 +49,8 @@
 		DA24C949175BC31900BCAA3A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */; };
 		DA94CAA8175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA94CAA6175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h */; };
 		DA94CAA9175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94CAA7175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m */; };
+		DAFCB45F175DA7E000E3BDCE /* StreamingJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DAFCB45D175DA7E000E3BDCE /* StreamingJSONRequestOperation.h */; };
+		DAFCB460175DA7E000E3BDCE /* StreamingJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFCB45E175DA7E000E3BDCE /* StreamingJSONRequestOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DA94CAA6175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppersonlabsIobridgeDeviceProxy.h; path = Classes/AppersonlabsIobridgeDeviceProxy.h; sourceTree = "<group>"; };
 		DA94CAA7175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppersonlabsIobridgeDeviceProxy.m; path = Classes/AppersonlabsIobridgeDeviceProxy.m; sourceTree = "<group>"; };
+		DAFCB45D175DA7E000E3BDCE /* StreamingJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StreamingJSONRequestOperation.h; path = Classes/StreamingJSONRequestOperation.h; sourceTree = "<group>"; };
+		DAFCB45E175DA7E000E3BDCE /* StreamingJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StreamingJSONRequestOperation.m; path = Classes/StreamingJSONRequestOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				24DD6CF81134B3F500162E58 /* AppersonlabsIobridgeModule.m */,
 				DA94CAA6175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h */,
 				DA94CAA7175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m */,
+				DAFCB45D175DA7E000E3BDCE /* StreamingJSONRequestOperation.h */,
+				DAFCB45E175DA7E000E3BDCE /* StreamingJSONRequestOperation.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 				DA24C942175BC2CE00BCAA3A /* AFXMLRequestOperation.h in Headers */,
 				DA24C944175BC2CE00BCAA3A /* UIImageView+AFNetworking.h in Headers */,
 				DA94CAA8175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h in Headers */,
+				DAFCB45F175DA7E000E3BDCE /* StreamingJSONRequestOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +300,7 @@
 				DA24C943175BC2CE00BCAA3A /* AFXMLRequestOperation.m in Sources */,
 				DA24C945175BC2CE00BCAA3A /* UIImageView+AFNetworking.m in Sources */,
 				DA94CAA9175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m in Sources */,
+				DAFCB460175DA7E000E3BDCE /* StreamingJSONRequestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,8 @@
 #import "AFHTTPClient.h"
 #import "AFJSONRequestOperation.h"
 
+#import "StreamingJSONRequestOperation.h"
+
 #define kAPIKeyHeaderName @"X-APIKEY"
 
 #define kConnectionStateResource @"gateway/request/state"
@@ -117,7 +119,27 @@ typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, 
     [self sendPOSTJSONRequestWithPath:kWriteGPIORegisterResource parameters:params callback:callback];
 }
 
-// TODO stream events
+#pragma mark Stream Events
+
+-(void)_listenerAdded:(NSString*)type count:(int)count {
+    if (count == 1 && [type isEqualToString:@"stream"]) {
+        // TODO start long-lived stream connection
+        NSDictionary * params = [NSDictionary dictionaryWithObject:self.apikey forKey:@"apikey"];
+        NSMutableURLRequest * req = [self.client requestWithMethod:@"GET" path:@"stream" parameters:params];
+        
+        StreamingJSONRequestOperation * op = [StreamingJSONRequestOperation JSONRequestOperationWithRequest:req receivedJSONBlock:nil];
+        [self.client enqueueHTTPRequestOperation:op];
+        NSLog(@"started stream listener");
+    }
+}
+
+-(void)_listenerRemoved:(NSString*)type count:(int)count {
+    if (count < 1) {
+        // TODO stop long-lived stream connection?
+        [self.client cancelAllHTTPOperationsWithMethod:@"GET" path:@"stream"];
+        NSLog(@"stopped stream listener");
+    }
+}
 
 #pragma mark JSON Request Utilities
 

@@ -19,7 +19,6 @@
 #define kWriteGPIORegisterResource @"gateway/request/register/write"
 #define kSendDataResource @"gateway/send"
 
-#define kDefaultChannel @"2"
 
 typedef void (^JsonSuccess)(NSURLRequest *request, NSHTTPURLResponse *response, id JSON);
 typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON);
@@ -64,13 +63,15 @@ typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, 
 }
 
 - (void)readGPIORegister:(id)args {
+    NSNumber * channel;
     NSString * registerName;
     KrollCallback * callback;
-    ENSURE_ARG_AT_INDEX(registerName, args, 0, NSString)
-    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 1, KrollCallback);
+    ENSURE_ARG_AT_INDEX(channel, args, 0, NSNumber)
+    ENSURE_ARG_AT_INDEX(registerName, args, 1, NSString)
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback);
     
     NSDictionary * params = [NSDictionary dictionaryWithObjectsAndKeys:
-                             kDefaultChannel, @"channel",
+                             channel, @"channel",
                              self.serial, @"serial",
                              registerName, @"register",
                              nil];
@@ -78,15 +79,17 @@ typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, 
 }
 
 - (void)sendData:(id)args {
+    NSNumber * channel;
     NSString * payload;
     NSString * encoding;
     KrollCallback * callback;
-    ENSURE_ARG_AT_INDEX(payload, args, 0, NSString)
-    ENSURE_ARG_OR_NIL_AT_INDEX(encoding, args, 1, NSString)
-    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback)
+    ENSURE_ARG_AT_INDEX(channel, args, 0, NSNumber)
+    ENSURE_ARG_AT_INDEX(payload, args, 1, NSString)
+    ENSURE_ARG_OR_NIL_AT_INDEX(encoding, args, 2, NSString)
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 3, KrollCallback)
     
     NSDictionary * params = [NSDictionary dictionaryWithObjectsAndKeys:
-                             kDefaultChannel, @"channel",
+                             channel, @"channel",
                              self.serial, @"serial",
                              (encoding ? encoding : @"plain"), @"encoding",
                              payload, @"payload",
@@ -96,15 +99,17 @@ typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, 
 }
 
 - (void)writeGPIORegister:(id)args {
+    NSNumber * channel;
     NSString * registerName;
     NSString * content;
     KrollCallback * callback;
-    ENSURE_ARG_AT_INDEX(registerName, args, 0, NSString)
-    ENSURE_ARG_AT_INDEX(content, args, 1, NSString)
-    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback);
+    ENSURE_ARG_AT_INDEX(channel, args, 0, NSNumber)
+    ENSURE_ARG_AT_INDEX(registerName, args, 1, NSString)
+    ENSURE_ARG_AT_INDEX(content, args, 2, NSString)
+    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 3, KrollCallback);
     
     NSDictionary * params = [NSDictionary dictionaryWithObjectsAndKeys:
-                             kDefaultChannel, @"channel",
+                             channel, @"channel",
                              self.serial, @"serial",
                              registerName, @"register",
                              content, @"content",

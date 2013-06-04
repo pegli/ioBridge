@@ -78,8 +78,9 @@ complete or in the event of an error.
 Get the connection state of the device (either connected or disconnected).
 *TODO* document the "data" object in the callback.
 
-**readGPIORegister**(register, callback)
+**readGPIORegister**(channel, register, callback)
 
+* channel (number): the channel to use for reading
 * register (string): the name of the register to read.
 * callback (function(err, data)): optional function to call when the request is
 complete or in the event of an error.
@@ -87,8 +88,9 @@ complete or in the event of an error.
 Read the value of a GPIO register for Iota-enabled devices.
 *TODO* document the "data" object in the callback.
 
-**sendData**(payload, encoding, callback)
+**sendData**(channel, payload, encoding, callback)
 
+* channel (number): the channel to use for writing
 * payload (string): the raw data to send to the device.  If the payload contains
 non-ASCII data, the `encoding` parameter must be set to "base64".
 * encoding (string): set to "base64" to encode non-ASCII data.  Default is "plain".
@@ -98,8 +100,9 @@ complete or in the event of an error.
 Send arbitrary data to the device.  The API key used to create the device must
 have write permission.
 
-**writeGPIORegister**(register, content, callback)
+**writeGPIORegister**(channel, register, content, callback)
 
+* channel (number): the channel to use for writing
 * register (string): the name of the register to read.
 * content (string): the data to write to the named register.
 * callback (function(err, data)): optional function to call when the request is

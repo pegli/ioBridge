@@ -11,8 +11,6 @@ var win = Ti.UI.createWindow({
 	backgroundColor:'white',
 	layout: "vertical"
 });
-var label = Ti.UI.createLabel();
-win.add(label);
 
 var connStateBtn = Ti.UI.createButton({
   title: "Conn State"
@@ -29,24 +27,90 @@ connStateBtn.addEventListener("click", function(e) {
 });
 win.add(connStateBtn);
 
-var readGPIOBtn = Ti.UI.createButton({
-  title: "Read GPIO 6"
+// channel
+var channelView = Ti.UI.createView({
+  layout: "horizontal",
+  height: Ti.UI.SIZE
 });
-readGPIOBtn.addEventListener('click', function() {
-  device.readGPIORegister("gpio.value.6", function(err, data) {
-    label.text = "GPIO.6 " + (err ? "err:" : ":") + JSON.stringify(err || data); 
-  });
-})
-win.add(readGPIOBtn);
+channelView.add(Ti.UI.createLabel({ text: "channel:" }));
+var channelText = Ti.UI.createTextField({
+  value: "2",
+  width: Ti.UI.FILL,
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  autocapitalization: false,
+  clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+});
+channelView.add(channelText);
+win.add(channelView);
 
-var writeGPIOBtn = Ti.UI.createButton({
-  title: "Write GPIO 345"
+// register name
+var registerView = Ti.UI.createView({
+  layout: "horizontal",
+  height: Ti.UI.SIZE
 });
-writeGPIOBtn.addEventListener('click', function() {
-  device.writeGPIORegister("gpio.value", ",,,1000,0,1000", function(err, data) {
-    label.text = "gpio.value " + (err ? "err:" : ":") + JSON.stringify(err || data); 
+registerView.add(Ti.UI.createLabel({ text: "register:" }));
+var registerText = Ti.UI.createTextField({
+  value: "gpio.value.6",
+  width: Ti.UI.FILL,
+  height: 38,
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  autocapitalization: false,
+  clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+});
+registerView.add(registerText);
+win.add(registerView);
+
+// register value
+var valueView = Ti.UI.createView({
+  layout: "horizontal",
+  height: Ti.UI.SIZE
+});
+valueView.add(Ti.UI.createLabel({ text: "value:" }));
+var valueText = Ti.UI.createTextField({
+  width: Ti.UI.FILL,
+  height: 38,
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  autocapitalization: false,
+  clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+});
+valueView.add(valueText);
+win.add(valueView);
+
+// row of buttons
+var buttonView = Ti.UI.createView({
+  layout: "horizontal",
+  height: Ti.UI.SIZE
+});
+
+var readBtn = Ti.UI.createButton({
+  title: "Read"
+});
+readBtn.addEventListener('click', function() {
+  channelText.blur();
+  registerText.blur();
+  valueText.blur();
+  device.readGPIORegister(parseInt(channelText.value), registerText.value, function(err, data) {
+    label.text = (err ? "err:" : ":") + JSON.stringify(err || data); 
   });
 })
-win.add(writeGPIOBtn);
+buttonView.add(readBtn);
+
+var writeBtn = Ti.UI.createButton({
+  title: "Write"
+});
+writeBtn.addEventListener('click', function() {
+  channelText.blur();
+  registerText.blur();
+  valueText.blur();
+  device.writeGPIORegister(parseInt(channelText.value), registerText.value, valueText.value, function(err, data) {
+    label.text = (err ? "err:" : ":") + JSON.stringify(err || data); 
+  });
+})
+buttonView.add(writeBtn);
+win.add(buttonView);
+
+var label = Ti.UI.createLabel();
+win.add(label);
 
 win.open();
+

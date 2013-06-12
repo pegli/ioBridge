@@ -1,3 +1,6 @@
 [submodule "mobile/ios/vendor/AFNetworking"]
 	path = mobile/ios/vendor/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "mobile/ios/vendor/yajl-objc"]
+	path = mobile/ios/vendor/yajl-objc
+	url = https://github.com/gabriel/yajl-objc.git

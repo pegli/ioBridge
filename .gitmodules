@@ -3,4 +3,4 @@
 	url = https://github.com/AFNetworking/AFNetworking.git
 [submodule "mobile/ios/vendor/yajl-objc"]
 	path = mobile/ios/vendor/yajl-objc
-	url = https://github.com/gabriel/yajl-objc.git
+	url = https://github.com/pegli/yajl-objc.git

@@ -115,6 +115,7 @@ var streamToggleBtn = Ti.UI.createButton({
 streamToggleBtn.addEventListener("click", function() {
   var listener = function(e) {
     label.text = JSON.stringify(e);
+    Ti.API.info("stream event: "+JSON.stringify(e));
   };
   
   if (streaming) {

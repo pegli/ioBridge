@@ -11,7 +11,7 @@
 // How to add a Framework (example)
 //
 // OTHER_LDFLAGS=$(inherited) -framework Foo
-OTHER_LDFLAGS=$(inherited) -framework SystemConfiguration -framework MobileCoreServices
+OTHER_LDFLAGS=$(inherited) -framework SystemConfiguration -framework MobileCoreServices -framework UIKit -framework CoreGraphics 
 //
 // Adding a framework for a specific version(s) of iPhone:
 //

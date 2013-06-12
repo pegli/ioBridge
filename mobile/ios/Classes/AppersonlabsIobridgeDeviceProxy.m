@@ -127,7 +127,12 @@ typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, 
         NSDictionary * params = [NSDictionary dictionaryWithObject:self.apikey forKey:@"apikey"];
         NSMutableURLRequest * req = [self.client requestWithMethod:@"GET" path:@"stream" parameters:params];
         
-        StreamingJSONRequestOperation * op = [StreamingJSONRequestOperation JSONRequestOperationWithRequest:req receivedJSONBlock:nil];
+        StreamingJSONRequestOperation * op = [StreamingJSONRequestOperation JSONRequestOperationWithRequest:req receivedJSONBlock:^(id obj, NSError * error) {
+            if ([[obj class] isSubclassOfClass:[NSDictionary class]]) {
+                [self fireEvent:@"stream" withObject:obj];
+            }
+        }];
+        
         [self.client enqueueHTTPRequestOperation:op];
         NSLog(@"started stream listener");
     }
@@ -135,7 +140,6 @@ typedef void (^JsonFailure)(NSURLRequest *request, NSHTTPURLResponse *response, 
 
 -(void)_listenerRemoved:(NSString*)type count:(int)count {
     if (count < 1) {
-        // TODO stop long-lived stream connection?
         [self.client cancelAllHTTPOperationsWithMethod:@"GET" path:@"stream"];
         NSLog(@"stopped stream listener");
     }

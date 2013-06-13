@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* AppersonlabsIobridgeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* AppersonlabsIobridgeModule.h */; };
+		24DD6CFA1134B3F500162E58 /* AppersonlabsIobridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* AppersonlabsIobridgeModule.m */; };
+		AA747D9F0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		DA24C933175BC2CE00BCAA3A /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C920175BC2CE00BCAA3A /* AFHTTPClient.h */; };
+		DA24C934175BC2CE00BCAA3A /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C921175BC2CE00BCAA3A /* AFHTTPClient.m */; };
+		DA24C935175BC2CE00BCAA3A /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C922175BC2CE00BCAA3A /* AFHTTPRequestOperation.h */; };
+		DA24C936175BC2CE00BCAA3A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C923175BC2CE00BCAA3A /* AFHTTPRequestOperation.m */; };
+		DA24C937175BC2CE00BCAA3A /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C924175BC2CE00BCAA3A /* AFImageRequestOperation.h */; };
+		DA24C938175BC2CE00BCAA3A /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C925175BC2CE00BCAA3A /* AFImageRequestOperation.m */; };
+		DA24C939175BC2CE00BCAA3A /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C926175BC2CE00BCAA3A /* AFJSONRequestOperation.h */; };
+		DA24C93A175BC2CE00BCAA3A /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C927175BC2CE00BCAA3A /* AFJSONRequestOperation.m */; };
+		DA24C93B175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C928175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h */; };
+		DA24C93C175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C929175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m */; };
+		DA24C93D175BC2CE00BCAA3A /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C92A175BC2CE00BCAA3A /* AFNetworking.h */; };
+		DA24C93E175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C92B175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h */; };
+		DA24C93F175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C92C175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m */; };
+		DA24C940175BC2CE00BCAA3A /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C92D175BC2CE00BCAA3A /* AFURLConnectionOperation.h */; };
+		DA24C941175BC2CE00BCAA3A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C92E175BC2CE00BCAA3A /* AFURLConnectionOperation.m */; };
+		DA24C942175BC2CE00BCAA3A /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C92F175BC2CE00BCAA3A /* AFXMLRequestOperation.h */; };
+		DA24C943175BC2CE00BCAA3A /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C930175BC2CE00BCAA3A /* AFXMLRequestOperation.m */; };
+		DA24C944175BC2CE00BCAA3A /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DA24C931175BC2CE00BCAA3A /* UIImageView+AFNetworking.h */; };
+		DA24C945175BC2CE00BCAA3A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24C932175BC2CE00BCAA3A /* UIImageView+AFNetworking.m */; };
+		DA24C947175BC31100BCAA3A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA24C946175BC31100BCAA3A /* SystemConfiguration.framework */; };
+		DA24C949175BC31900BCAA3A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */; };
+		DA6CF37C1767E33300F8348E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6CF37B1767E33300F8348E /* CoreGraphics.framework */; };
+		DA6CF37E1767E33B00F8348E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6CF37D1767E33B00F8348E /* UIKit.framework */; };
+		DA94CAA8175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA94CAA6175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h */; };
+		DA94CAA9175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA94CAA7175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m */; };
+		DADECA841768240F00B2D4EA /* NSBundle+YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = DADEC9581768240F00B2D4EA /* NSBundle+YAJL.h */; };
+		DADECA851768240F00B2D4EA /* NSBundle+YAJL.m in Sources */ = {isa = PBXBuildFile; fileRef = DADEC9591768240F00B2D4EA /* NSBundle+YAJL.m */; };
+		DADECA861768240F00B2D4EA /* NSObject+YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = DADEC95A1768240F00B2D4EA /* NSObject+YAJL.h */; };
+		DADECA871768240F00B2D4EA /* NSObject+YAJL.m in Sources */ = {isa = PBXBuildFile; fileRef = DADEC95B1768240F00B2D4EA /* NSObject+YAJL.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECA881768240F00B2D4EA /* YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = DADEC95C1768240F00B2D4EA /* YAJL.h */; };
+		DADECA891768240F00B2D4EA /* YAJLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = DADEC95D1768240F00B2D4EA /* YAJLDocument.h */; };
+		DADECA8A1768240F00B2D4EA /* YAJLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DADEC95E1768240F00B2D4EA /* YAJLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECA8B1768240F00B2D4EA /* YAJLGen.h in Headers */ = {isa = PBXBuildFile; fileRef = DADEC95F1768240F00B2D4EA /* YAJLGen.h */; };
+		DADECA8C1768240F00B2D4EA /* YAJLGen.m in Sources */ = {isa = PBXBuildFile; fileRef = DADEC9601768240F00B2D4EA /* YAJLGen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECA8D1768240F00B2D4EA /* YAJLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = DADEC9611768240F00B2D4EA /* YAJLParser.h */; };
+		DADECA8E1768240F00B2D4EA /* YAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DADEC9621768240F00B2D4EA /* YAJLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECA8F1768240F00B2D4EA /* GHNSBundle+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = DADEC9661768240F00B2D4EA /* GHNSBundle+Utils.h */; };
+		DADECA901768240F00B2D4EA /* GHNSBundle+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = DADEC9671768240F00B2D4EA /* GHNSBundle+Utils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECA911768240F00B2D4EA /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = DADEC9691768240F00B2D4EA /* GTMBase64.h */; };
+		DADECA921768240F00B2D4EA /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = DADEC96A1768240F00B2D4EA /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB021768241000B2D4EA /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA351768240F00B2D4EA /* JSON.h */; };
+		DADECB031768241000B2D4EA /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA361768240F00B2D4EA /* NSObject+SBJSON.h */; };
+		DADECB041768241000B2D4EA /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DADECA371768240F00B2D4EA /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB051768241000B2D4EA /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA381768240F00B2D4EA /* NSString+SBJSON.h */; };
+		DADECB061768241000B2D4EA /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DADECA391768240F00B2D4EA /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB071768241000B2D4EA /* SBJSONScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA3A1768240F00B2D4EA /* SBJSONScanner.h */; };
+		DADECB081768241000B2D4EA /* SBJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = DADECA3B1768240F00B2D4EA /* SBJSONScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB171768241000B2D4EA /* yajl_common.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA6D1768240F00B2D4EA /* yajl_common.h */; };
+		DADECB181768241000B2D4EA /* yajl_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA6E1768240F00B2D4EA /* yajl_gen.h */; };
+		DADECB191768241000B2D4EA /* yajl_parse.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA6F1768240F00B2D4EA /* yajl_parse.h */; };
+		DADECB1A1768241000B2D4EA /* yajl_version.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA701768240F00B2D4EA /* yajl_version.h */; };
+		DADECB1B1768241000B2D4EA /* yajl_common.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA721768240F00B2D4EA /* yajl_common.h */; };
+		DADECB1C1768241000B2D4EA /* yajl_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA731768240F00B2D4EA /* yajl_gen.h */; };
+		DADECB1D1768241000B2D4EA /* yajl_parse.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA741768240F00B2D4EA /* yajl_parse.h */; };
+		DADECB1E1768241000B2D4EA /* yajl_version.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA751768240F00B2D4EA /* yajl_version.h */; };
+		DADECB1F1768241000B2D4EA /* yajl.c in Sources */ = {isa = PBXBuildFile; fileRef = DADECA761768240F00B2D4EA /* yajl.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB201768241000B2D4EA /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = DADECA771768240F00B2D4EA /* yajl_alloc.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB211768241000B2D4EA /* yajl_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA781768240F00B2D4EA /* yajl_alloc.h */; };
+		DADECB221768241000B2D4EA /* yajl_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = DADECA791768240F00B2D4EA /* yajl_buf.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB231768241000B2D4EA /* yajl_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA7A1768240F00B2D4EA /* yajl_buf.h */; };
+		DADECB241768241000B2D4EA /* yajl_bytestack.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA7B1768240F00B2D4EA /* yajl_bytestack.h */; };
+		DADECB251768241000B2D4EA /* yajl_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = DADECA7C1768240F00B2D4EA /* yajl_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB261768241000B2D4EA /* yajl_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA7D1768240F00B2D4EA /* yajl_encode.h */; };
+		DADECB271768241000B2D4EA /* yajl_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = DADECA7E1768240F00B2D4EA /* yajl_gen.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB281768241000B2D4EA /* yajl_lex.c in Sources */ = {isa = PBXBuildFile; fileRef = DADECA7F1768240F00B2D4EA /* yajl_lex.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB291768241000B2D4EA /* yajl_lex.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA801768240F00B2D4EA /* yajl_lex.h */; };
+		DADECB2A1768241000B2D4EA /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = DADECA811768240F00B2D4EA /* yajl_parser.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADECB2B1768241000B2D4EA /* yajl_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = DADECA821768240F00B2D4EA /* yajl_parser.h */; };
+		DADECB2C1768241000B2D4EA /* yajl_version.c in Sources */ = {isa = PBXBuildFile; fileRef = DADECA831768240F00B2D4EA /* yajl_version.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DAFCB45F175DA7E000E3BDCE /* StreamingJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DAFCB45D175DA7E000E3BDCE /* StreamingJSONRequestOperation.h */; };
+		DAFCB460175DA7E000E3BDCE /* StreamingJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFCB45E175DA7E000E3BDCE /* StreamingJSONRequestOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = iobridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* AppersonlabsIobridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppersonlabsIobridgeModule.h; path = Classes/AppersonlabsIobridgeModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* AppersonlabsIobridgeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppersonlabsIobridgeModule.m; path = Classes/AppersonlabsIobridgeModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppersonlabsIobridge_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libAppersonlabsIobridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppersonlabsIobridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA24C920175BC2CE00BCAA3A /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		DA24C921175BC2CE00BCAA3A /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		DA24C922175BC2CE00BCAA3A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		DA24C923175BC2CE00BCAA3A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		DA24C924175BC2CE00BCAA3A /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		DA24C925175BC2CE00BCAA3A /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		DA24C926175BC2CE00BCAA3A /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		DA24C927175BC2CE00BCAA3A /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		DA24C928175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		DA24C929175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		DA24C92A175BC2CE00BCAA3A /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		DA24C92B175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		DA24C92C175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		DA24C92D175BC2CE00BCAA3A /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		DA24C92E175BC2CE00BCAA3A /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		DA24C92F175BC2CE00BCAA3A /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		DA24C930175BC2CE00BCAA3A /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		DA24C931175BC2CE00BCAA3A /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		DA24C932175BC2CE00BCAA3A /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		DA24C946175BC31100BCAA3A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DA6CF37B1767E33300F8348E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA6CF37D1767E33B00F8348E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA94CAA6175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppersonlabsIobridgeDeviceProxy.h; path = Classes/AppersonlabsIobridgeDeviceProxy.h; sourceTree = "<group>"; };
+		DA94CAA7175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppersonlabsIobridgeDeviceProxy.m; path = Classes/AppersonlabsIobridgeDeviceProxy.m; sourceTree = "<group>"; };
+		DADEC9581768240F00B2D4EA /* NSBundle+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YAJL.h"; sourceTree = "<group>"; };
+		DADEC9591768240F00B2D4EA /* NSBundle+YAJL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YAJL.m"; sourceTree = "<group>"; };
+		DADEC95A1768240F00B2D4EA /* NSObject+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YAJL.h"; sourceTree = "<group>"; };
+		DADEC95B1768240F00B2D4EA /* NSObject+YAJL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YAJL.m"; sourceTree = "<group>"; };
+		DADEC95C1768240F00B2D4EA /* YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJL.h; sourceTree = "<group>"; };
+		DADEC95D1768240F00B2D4EA /* YAJLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLDocument.h; sourceTree = "<group>"; };
+		DADEC95E1768240F00B2D4EA /* YAJLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJLDocument.m; sourceTree = "<group>"; };
+		DADEC95F1768240F00B2D4EA /* YAJLGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLGen.h; sourceTree = "<group>"; };
+		DADEC9601768240F00B2D4EA /* YAJLGen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJLGen.m; sourceTree = "<group>"; };
+		DADEC9611768240F00B2D4EA /* YAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLParser.h; sourceTree = "<group>"; };
+		DADEC9621768240F00B2D4EA /* YAJLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJLParser.m; sourceTree = "<group>"; };
+		DADEC9661768240F00B2D4EA /* GHNSBundle+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHNSBundle+Utils.h"; sourceTree = "<group>"; };
+		DADEC9671768240F00B2D4EA /* GHNSBundle+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSBundle+Utils.m"; sourceTree = "<group>"; };
+		DADEC9691768240F00B2D4EA /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		DADEC96A1768240F00B2D4EA /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		DADECA331768240F00B2D4EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		DADECA351768240F00B2D4EA /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		DADECA361768240F00B2D4EA /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		DADECA371768240F00B2D4EA /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		DADECA381768240F00B2D4EA /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		DADECA391768240F00B2D4EA /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		DADECA3A1768240F00B2D4EA /* SBJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSONScanner.h; sourceTree = "<group>"; };
+		DADECA3B1768240F00B2D4EA /* SBJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSONScanner.m; sourceTree = "<group>"; };
+		DADECA6D1768240F00B2D4EA /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
+		DADECA6E1768240F00B2D4EA /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
+		DADECA6F1768240F00B2D4EA /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		DADECA701768240F00B2D4EA /* yajl_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_version.h; sourceTree = "<group>"; };
+		DADECA721768240F00B2D4EA /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
+		DADECA731768240F00B2D4EA /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
+		DADECA741768240F00B2D4EA /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		DADECA751768240F00B2D4EA /* yajl_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_version.h; sourceTree = "<group>"; };
+		DADECA761768240F00B2D4EA /* yajl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl.c; sourceTree = "<group>"; };
+		DADECA771768240F00B2D4EA /* yajl_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_alloc.c; sourceTree = "<group>"; };
+		DADECA781768240F00B2D4EA /* yajl_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_alloc.h; sourceTree = "<group>"; };
+		DADECA791768240F00B2D4EA /* yajl_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_buf.c; sourceTree = "<group>"; };
+		DADECA7A1768240F00B2D4EA /* yajl_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_buf.h; sourceTree = "<group>"; };
+		DADECA7B1768240F00B2D4EA /* yajl_bytestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_bytestack.h; sourceTree = "<group>"; };
+		DADECA7C1768240F00B2D4EA /* yajl_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_encode.c; sourceTree = "<group>"; };
+		DADECA7D1768240F00B2D4EA /* yajl_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_encode.h; sourceTree = "<group>"; };
+		DADECA7E1768240F00B2D4EA /* yajl_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_gen.c; sourceTree = "<group>"; };
+		DADECA7F1768240F00B2D4EA /* yajl_lex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_lex.c; sourceTree = "<group>"; };
+		DADECA801768240F00B2D4EA /* yajl_lex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_lex.h; sourceTree = "<group>"; };
+		DADECA811768240F00B2D4EA /* yajl_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_parser.c; sourceTree = "<group>"; };
+		DADECA821768240F00B2D4EA /* yajl_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parser.h; sourceTree = "<group>"; };
+		DADECA831768240F00B2D4EA /* yajl_version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_version.c; sourceTree = "<group>"; };
+		DAFCB45D175DA7E000E3BDCE /* StreamingJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StreamingJSONRequestOperation.h; path = Classes/StreamingJSONRequestOperation.h; sourceTree = "<group>"; };
+		DAFCB45E175DA7E000E3BDCE /* StreamingJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StreamingJSONRequestOperation.m; path = Classes/StreamingJSONRequestOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6CF37E1767E33B00F8348E /* UIKit.framework in Frameworks */,
+				DA6CF37C1767E33300F8348E /* CoreGraphics.framework in Frameworks */,
+				DA24C949175BC31900BCAA3A /* MobileCoreServices.framework in Frameworks */,
+				DA24C947175BC31100BCAA3A /* SystemConfiguration.framework in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libAppersonlabsIobridge.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* iobridge */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				DA24C91E175BC2A500BCAA3A /* Vendor */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = iobridge;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CF37D1767E33B00F8348E /* UIKit.framework */,
+				DA6CF37B1767E33300F8348E /* CoreGraphics.framework */,
+				DA24C948175BC31900BCAA3A /* MobileCoreServices.framework */,
+				DA24C946175BC31100BCAA3A /* SystemConfiguration.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24DD6CF71134B3F500162E58 /* AppersonlabsIobridgeModule.h */,
+				24DD6CF81134B3F500162E58 /* AppersonlabsIobridgeModule.m */,
+				DA94CAA6175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h */,
+				DA94CAA7175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m */,
+				DAFCB45D175DA7E000E3BDCE /* StreamingJSONRequestOperation.h */,
+				DAFCB45E175DA7E000E3BDCE /* StreamingJSONRequestOperation.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DA24C91E175BC2A500BCAA3A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				DADEC9541768240F00B2D4EA /* yajl-objc */,
+				DA24C91F175BC2CE00BCAA3A /* AFNetworking */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		DA24C91F175BC2CE00BCAA3A /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DA24C920175BC2CE00BCAA3A /* AFHTTPClient.h */,
+				DA24C921175BC2CE00BCAA3A /* AFHTTPClient.m */,
+				DA24C922175BC2CE00BCAA3A /* AFHTTPRequestOperation.h */,
+				DA24C923175BC2CE00BCAA3A /* AFHTTPRequestOperation.m */,
+				DA24C924175BC2CE00BCAA3A /* AFImageRequestOperation.h */,
+				DA24C925175BC2CE00BCAA3A /* AFImageRequestOperation.m */,
+				DA24C926175BC2CE00BCAA3A /* AFJSONRequestOperation.h */,
+				DA24C927175BC2CE00BCAA3A /* AFJSONRequestOperation.m */,
+				DA24C928175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h */,
+				DA24C929175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m */,
+				DA24C92A175BC2CE00BCAA3A /* AFNetworking.h */,
+				DA24C92B175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h */,
+				DA24C92C175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m */,
+				DA24C92D175BC2CE00BCAA3A /* AFURLConnectionOperation.h */,
+				DA24C92E175BC2CE00BCAA3A /* AFURLConnectionOperation.m */,
+				DA24C92F175BC2CE00BCAA3A /* AFXMLRequestOperation.h */,
+				DA24C930175BC2CE00BCAA3A /* AFXMLRequestOperation.m */,
+				DA24C931175BC2CE00BCAA3A /* UIImageView+AFNetworking.h */,
+				DA24C932175BC2CE00BCAA3A /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = vendor/AFNetworking/AFNetworking;
+			sourceTree = "<group>";
+		};
+		DADEC9541768240F00B2D4EA /* yajl-objc */ = {
+			isa = PBXGroup;
+			children = (
+				DADEC9571768240F00B2D4EA /* Classes */,
+				DADEC9641768240F00B2D4EA /* Libraries */,
+				DADECA331768240F00B2D4EA /* README.md */,
+				DADECA341768240F00B2D4EA /* SBJSON */,
+				DADECA6B1768240F00B2D4EA /* yajl-1.0.11 */,
+			);
+			name = "yajl-objc";
+			path = "vendor/yajl-objc";
+			sourceTree = "<group>";
+		};
+		DADEC9571768240F00B2D4EA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DADEC9581768240F00B2D4EA /* NSBundle+YAJL.h */,
+				DADEC9591768240F00B2D4EA /* NSBundle+YAJL.m */,
+				DADEC95A1768240F00B2D4EA /* NSObject+YAJL.h */,
+				DADEC95B1768240F00B2D4EA /* NSObject+YAJL.m */,
+				DADEC95C1768240F00B2D4EA /* YAJL.h */,
+				DADEC95D1768240F00B2D4EA /* YAJLDocument.h */,
+				DADEC95E1768240F00B2D4EA /* YAJLDocument.m */,
+				DADEC95F1768240F00B2D4EA /* YAJLGen.h */,
+				DADEC9601768240F00B2D4EA /* YAJLGen.m */,
+				DADEC9611768240F00B2D4EA /* YAJLParser.h */,
+				DADEC9621768240F00B2D4EA /* YAJLParser.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DADEC9641768240F00B2D4EA /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DADEC9651768240F00B2D4EA /* GHKit */,
+				DADEC9681768240F00B2D4EA /* GTM */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		DADEC9651768240F00B2D4EA /* GHKit */ = {
+			isa = PBXGroup;
+			children = (
+				DADEC9661768240F00B2D4EA /* GHNSBundle+Utils.h */,
+				DADEC9671768240F00B2D4EA /* GHNSBundle+Utils.m */,
+			);
+			path = GHKit;
+			sourceTree = "<group>";
+		};
+		DADEC9681768240F00B2D4EA /* GTM */ = {
+			isa = PBXGroup;
+			children = (
+				DADEC9691768240F00B2D4EA /* GTMBase64.h */,
+				DADEC96A1768240F00B2D4EA /* GTMBase64.m */,
+			);
+			path = GTM;
+			sourceTree = "<group>";
+		};
+		DADECA341768240F00B2D4EA /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				DADECA351768240F00B2D4EA /* JSON.h */,
+				DADECA361768240F00B2D4EA /* NSObject+SBJSON.h */,
+				DADECA371768240F00B2D4EA /* NSObject+SBJSON.m */,
+				DADECA381768240F00B2D4EA /* NSString+SBJSON.h */,
+				DADECA391768240F00B2D4EA /* NSString+SBJSON.m */,
+				DADECA3A1768240F00B2D4EA /* SBJSONScanner.h */,
+				DADECA3B1768240F00B2D4EA /* SBJSONScanner.m */,
+			);
+			path = SBJSON;
+			sourceTree = "<group>";
+		};
+		DADECA6B1768240F00B2D4EA /* yajl-1.0.11 */ = {
+			isa = PBXGroup;
+			children = (
+				DADECA6C1768240F00B2D4EA /* api */,
+				DADECA711768240F00B2D4EA /* yajl */,
+				DADECA761768240F00B2D4EA /* yajl.c */,
+				DADECA771768240F00B2D4EA /* yajl_alloc.c */,
+				DADECA781768240F00B2D4EA /* yajl_alloc.h */,
+				DADECA791768240F00B2D4EA /* yajl_buf.c */,
+				DADECA7A1768240F00B2D4EA /* yajl_buf.h */,
+				DADECA7B1768240F00B2D4EA /* yajl_bytestack.h */,
+				DADECA7C1768240F00B2D4EA /* yajl_encode.c */,
+				DADECA7D1768240F00B2D4EA /* yajl_encode.h */,
+				DADECA7E1768240F00B2D4EA /* yajl_gen.c */,
+				DADECA7F1768240F00B2D4EA /* yajl_lex.c */,
+				DADECA801768240F00B2D4EA /* yajl_lex.h */,
+				DADECA811768240F00B2D4EA /* yajl_parser.c */,
+				DADECA821768240F00B2D4EA /* yajl_parser.h */,
+				DADECA831768240F00B2D4EA /* yajl_version.c */,
+			);
+			path = "yajl-1.0.11";
+			sourceTree = "<group>";
+		};
+		DADECA6C1768240F00B2D4EA /* api */ = {
+			isa = PBXGroup;
+			children = (
+				DADECA6D1768240F00B2D4EA /* yajl_common.h */,
+				DADECA6E1768240F00B2D4EA /* yajl_gen.h */,
+				DADECA6F1768240F00B2D4EA /* yajl_parse.h */,
+				DADECA701768240F00B2D4EA /* yajl_version.h */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		DADECA711768240F00B2D4EA /* yajl */ = {
+			isa = PBXGroup;
+			children = (
+				DADECA721768240F00B2D4EA /* yajl_common.h */,
+				DADECA731768240F00B2D4EA /* yajl_gen.h */,
+				DADECA741768240F00B2D4EA /* yajl_parse.h */,
+				DADECA751768240F00B2D4EA /* yajl_version.h */,
+			);
+			path = yajl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* AppersonlabsIobridge_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* AppersonlabsIobridgeModule.h in Headers */,
+				DA24C933175BC2CE00BCAA3A /* AFHTTPClient.h in Headers */,
+				DA24C935175BC2CE00BCAA3A /* AFHTTPRequestOperation.h in Headers */,
+				DA24C937175BC2CE00BCAA3A /* AFImageRequestOperation.h in Headers */,
+				DA24C939175BC2CE00BCAA3A /* AFJSONRequestOperation.h in Headers */,
+				DA24C93B175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.h in Headers */,
+				DA24C93D175BC2CE00BCAA3A /* AFNetworking.h in Headers */,
+				DA24C93E175BC2CE00BCAA3A /* AFPropertyListRequestOperation.h in Headers */,
+				DA24C940175BC2CE00BCAA3A /* AFURLConnectionOperation.h in Headers */,
+				DA24C942175BC2CE00BCAA3A /* AFXMLRequestOperation.h in Headers */,
+				DA24C944175BC2CE00BCAA3A /* UIImageView+AFNetworking.h in Headers */,
+				DA94CAA8175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.h in Headers */,
+				DAFCB45F175DA7E000E3BDCE /* StreamingJSONRequestOperation.h in Headers */,
+				DADECA841768240F00B2D4EA /* NSBundle+YAJL.h in Headers */,
+				DADECA861768240F00B2D4EA /* NSObject+YAJL.h in Headers */,
+				DADECA881768240F00B2D4EA /* YAJL.h in Headers */,
+				DADECA891768240F00B2D4EA /* YAJLDocument.h in Headers */,
+				DADECA8B1768240F00B2D4EA /* YAJLGen.h in Headers */,
+				DADECA8D1768240F00B2D4EA /* YAJLParser.h in Headers */,
+				DADECA8F1768240F00B2D4EA /* GHNSBundle+Utils.h in Headers */,
+				DADECA911768240F00B2D4EA /* GTMBase64.h in Headers */,
+				DADECB021768241000B2D4EA /* JSON.h in Headers */,
+				DADECB031768241000B2D4EA /* NSObject+SBJSON.h in Headers */,
+				DADECB051768241000B2D4EA /* NSString+SBJSON.h in Headers */,
+				DADECB071768241000B2D4EA /* SBJSONScanner.h in Headers */,
+				DADECB171768241000B2D4EA /* yajl_common.h in Headers */,
+				DADECB181768241000B2D4EA /* yajl_gen.h in Headers */,
+				DADECB191768241000B2D4EA /* yajl_parse.h in Headers */,
+				DADECB1A1768241000B2D4EA /* yajl_version.h in Headers */,
+				DADECB1B1768241000B2D4EA /* yajl_common.h in Headers */,
+				DADECB1C1768241000B2D4EA /* yajl_gen.h in Headers */,
+				DADECB1D1768241000B2D4EA /* yajl_parse.h in Headers */,
+				DADECB1E1768241000B2D4EA /* yajl_version.h in Headers */,
+				DADECB211768241000B2D4EA /* yajl_alloc.h in Headers */,
+				DADECB231768241000B2D4EA /* yajl_buf.h in Headers */,
+				DADECB241768241000B2D4EA /* yajl_bytestack.h in Headers */,
+				DADECB261768241000B2D4EA /* yajl_encode.h in Headers */,
+				DADECB291768241000B2D4EA /* yajl_lex.h in Headers */,
+				DADECB2B1768241000B2D4EA /* yajl_parser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* iobridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iobridge" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iobridge;
+			productName = iobridge;
+			productReference = D2AAC07E0554694100DB518D /* libAppersonlabsIobridge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iobridge" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* iobridge */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* iobridge */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DD6CFA1134B3F500162E58 /* AppersonlabsIobridgeModule.m in Sources */,
+				DA24C934175BC2CE00BCAA3A /* AFHTTPClient.m in Sources */,
+				DA24C936175BC2CE00BCAA3A /* AFHTTPRequestOperation.m in Sources */,
+				DA24C938175BC2CE00BCAA3A /* AFImageRequestOperation.m in Sources */,
+				DA24C93A175BC2CE00BCAA3A /* AFJSONRequestOperation.m in Sources */,
+				DA24C93C175BC2CE00BCAA3A /* AFNetworkActivityIndicatorManager.m in Sources */,
+				DA24C93F175BC2CE00BCAA3A /* AFPropertyListRequestOperation.m in Sources */,
+				DA24C941175BC2CE00BCAA3A /* AFURLConnectionOperation.m in Sources */,
+				DA24C943175BC2CE00BCAA3A /* AFXMLRequestOperation.m in Sources */,
+				DA24C945175BC2CE00BCAA3A /* UIImageView+AFNetworking.m in Sources */,
+				DA94CAA9175BD5AE004BA3D7 /* AppersonlabsIobridgeDeviceProxy.m in Sources */,
+				DAFCB460175DA7E000E3BDCE /* StreamingJSONRequestOperation.m in Sources */,
+				DADECA851768240F00B2D4EA /* NSBundle+YAJL.m in Sources */,
+				DADECA871768240F00B2D4EA /* NSObject+YAJL.m in Sources */,
+				DADECA8A1768240F00B2D4EA /* YAJLDocument.m in Sources */,
+				DADECA8C1768240F00B2D4EA /* YAJLGen.m in Sources */,
+				DADECA8E1768240F00B2D4EA /* YAJLParser.m in Sources */,
+				DADECA901768240F00B2D4EA /* GHNSBundle+Utils.m in Sources */,
+				DADECA921768240F00B2D4EA /* GTMBase64.m in Sources */,
+				DADECB041768241000B2D4EA /* NSObject+SBJSON.m in Sources */,
+				DADECB061768241000B2D4EA /* NSString+SBJSON.m in Sources */,
+				DADECB081768241000B2D4EA /* SBJSONScanner.m in Sources */,
+				DADECB1F1768241000B2D4EA /* yajl.c in Sources */,
+				DADECB201768241000B2D4EA /* yajl_alloc.c in Sources */,
+				DADECB221768241000B2D4EA /* yajl_buf.c in Sources */,
+				DADECB251768241000B2D4EA /* yajl_encode.c in Sources */,
+				DADECB271768241000B2D4EA /* yajl_gen.c in Sources */,
+				DADECB281768241000B2D4EA /* yajl_lex.c in Sources */,
+				DADECB2A1768241000B2D4EA /* yajl_parser.c in Sources */,
+				DADECB2C1768241000B2D4EA /* yajl_version.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* iobridge */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/AppersonlabsIobridge.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppersonlabsIobridge_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/CombinedRelease\"",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/YAJLiOS.build/Release-iphoneos/YAJLiOS (Device).build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/YAJLiOS.build/Release-iphoneos/YAJLiOS (Device).build/Objects-normal/armv7s\"",
+				);
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = AppersonlabsIobridge;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/AppersonlabsIobridge.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppersonlabsIobridge_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/CombinedRelease\"",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/YAJLiOS.build/Release-iphoneos/YAJLiOS (Device).build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/vendor/yajl-objc/Project-iOS/build/YAJLiOS.build/Release-iphoneos/YAJLiOS (Device).build/Objects-normal/armv7s\"",
+				);
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = AppersonlabsIobridge;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/AppersonlabsIobridge.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppersonlabsIobridge_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AppersonlabsIobridge;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/AppersonlabsIobridge.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AppersonlabsIobridge_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AppersonlabsIobridge;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iobridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iobridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

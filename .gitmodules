@@ -4,6 +4,3 @@
 [submodule "mobile/ios/vendor/yajl-objc"]
 	path = mobile/ios/vendor/yajl-objc
 	url = https://github.com/pegli/yajl-objc.git
-[submodule "mobile/android/vendor/android-async-http"]
-	path = mobile/android/vendor/android-async-http
-	url = https://github.com/loopj/android-async-http.git

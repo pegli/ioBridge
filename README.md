@@ -1,4 +1,4 @@
-# Titanium RealTime.io mobule to control ioBridge devices
+# Titanium RealTime.io module
 
 RealTime.io, powered by ioBridge technology, is a platform for connecting devices to cloud services 
 and mobile apps seamlessly. The RealTime.io Titanium Modules for iOS and Android allow mobile app developers 

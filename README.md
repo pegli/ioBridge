@@ -74,14 +74,6 @@ complete or in the event of an error.
 Get the connection state of the device (either connected or disconnected).
 *TODO* document the "data" object in the callback.
 
-**fetchConnectionState**(callback)
-
-* callback (function(err, data)): optional function to call when the request is
-complete or in the event of an error.
-
-Get the connection state of the device (either connected or disconnected).
-*TODO* document the "data" object in the callback.
-
 **readGPIORegister**(channel, register, callback)
 
 * channel (number): the channel to use for reading
@@ -122,8 +114,7 @@ server.  The following event properties may be present:
 
 * serial: The serial ID if the device from which the data original data came
 * channel: The channel on which the device used to send the data
-* status: Connected or Disconnected
-* source: ‘remote’ if the data is from a device, ‘server’ if this is an update from the server
+* status: connected or disconnected
 * timestamp: Epoch time in seconds of the message’s receipt by the server
 * ms: Milliseconds after the timestamp that defines the exact subsecond of message’s receipt
 * encoding: ‘plain’ or ‘base64’
@@ -131,3 +122,6 @@ server.  The following event properties may be present:
 
 The payload of the event may be GPIO pin values, serial data input, or other device
 data.
+
+**PLATFORM NOTE**: on Android, use `device.removeAllListeners("stream")` to stop streaming;
+on iOS, use `device.removeEventListener("stream", listenerFn)`.

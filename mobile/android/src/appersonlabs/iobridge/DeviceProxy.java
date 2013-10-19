@@ -13,6 +13,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.os.Build;
+import android.util.Log;
 
 import com.turbomanage.httpclient.AsyncCallback;
 import com.turbomanage.httpclient.HttpResponse;
@@ -35,14 +36,20 @@ public class DeviceProxy extends KrollProxy {
 
         @Override
         public void onComplete(HttpResponse httpResponse) {
-            if (callback != null) {
-                try {
-                    JSONObject obj = new JSONObject(httpResponse.getBodyAsString());
-                    callback.callAsync(thisObject, new Object[] { null, KrollDict.fromJSON(obj) });
+            if (httpResponse != null) {
+                Log.i(LCAT, String.format("response status: %d", httpResponse.getStatus()));
+                if (callback != null) {
+                    try {
+                        JSONObject obj = new JSONObject(httpResponse.getBodyAsString());
+                        callback.callAsync(thisObject, new Object[] { null, KrollDict.fromJSON(obj) });
+                    }
+                    catch (JSONException e) {
+                        onError(e);
+                    }
                 }
-                catch (JSONException e) {
-                    onError(e);
-                }
+            }
+            else {
+                Log.e(LCAT, "error in async callback: " + (httpResponse != null ? httpResponse.getBodyAsString() : "null response"));
             }
         }
 
@@ -55,7 +62,7 @@ public class DeviceProxy extends KrollProxy {
             }
         }
     }
-    
+
     private static final String      BASE_URL                 = "http://api.realtime.io/v1/";
 
     private static AndroidHttpClient HTTP_CLIENT              = new AndroidHttpClient(BASE_URL);
@@ -107,14 +114,27 @@ public class DeviceProxy extends KrollProxy {
         HTTP_CLIENT.addHeader("Content-Type", "application/json");
     }
 
+    private StreamingURLConnectionTask streamer = null;
+
+    /**
+     * Only called the first time an event of a particular type is added.
+     */
     @Override
     public void onHasListenersChanged(String event, boolean hasListeners) {
+        Log.i(LCAT, "onHasListenersChanged("+event+","+hasListeners+")");
         if ("stream".equals(event)) {
             if (hasListeners) {
                 // TODO start streaming
+                streamer = new StreamingURLConnectionTask(this);
+                streamer.execute(new String[] { BASE_URL + PATH_STREAMING + "?apikey=" + apikey });
+                Log.i(LCAT, "started streamer");
             }
             else {
                 // TODO stop streaming
+                if (streamer != null) {
+                    streamer.cancel();
+                    Log.i(LCAT, "cancelled streamer");
+                }
             }
         }
         super.onHasListenersChanged(event, hasListeners);

@@ -37,7 +37,7 @@ registerView.add(Ti.UI.createLabel({ text: "register:" }));
 var registerText = Ti.UI.createTextField({
   value: "gpio.value.6",
   width: Ti.UI.FILL,
-  height: 38,
+  height: '38dp',
   borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
   autocapitalization: false,
   clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
@@ -53,7 +53,7 @@ var valueView = Ti.UI.createView({
 valueView.add(Ti.UI.createLabel({ text: "value:" }));
 var valueText = Ti.UI.createTextField({
   width: Ti.UI.FILL,
-  height: 38,
+  height: '38dp',
   borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
   autocapitalization: false,
   clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
@@ -77,7 +77,7 @@ readBtn.addEventListener('click', function() {
   device.readGPIORegister(parseInt(channelText.value), registerText.value, function(err, data) {
     label.text = (err ? "err:" : ":") + JSON.stringify(err || data); 
   });
-})
+});
 buttonView.add(readBtn);
 
 var writeBtn = Ti.UI.createButton({
@@ -90,7 +90,7 @@ writeBtn.addEventListener('click', function() {
   device.writeGPIORegister(parseInt(channelText.value), registerText.value, valueText.value, function(err, data) {
     label.text = (err ? "err:" : ":") + JSON.stringify(err || data); 
   });
-})
+});
 buttonView.add(writeBtn);
 
 var connStateBtn = Ti.UI.createButton({
@@ -119,7 +119,7 @@ streamToggleBtn.addEventListener("click", function() {
   };
   
   if (streaming) {
-    device.removeEventListener("stream", listener);
+    device.removeAllListeners("stream"); // removeEventListener not firing on Android
     streamToggleBtn.title = "Start Streaming";
     streaming = false;
   }

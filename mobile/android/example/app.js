@@ -77,7 +77,7 @@ readBtn.addEventListener('click', function() {
   device.readGPIORegister(parseInt(channelText.value), registerText.value, function(err, data) {
     label.text = (err ? "err:" : ":") + JSON.stringify(err || data); 
   });
-})
+});
 buttonView.add(readBtn);
 
 var writeBtn = Ti.UI.createButton({
@@ -90,7 +90,7 @@ writeBtn.addEventListener('click', function() {
   device.writeGPIORegister(parseInt(channelText.value), registerText.value, valueText.value, function(err, data) {
     label.text = (err ? "err:" : ":") + JSON.stringify(err || data); 
   });
-})
+});
 buttonView.add(writeBtn);
 
 var connStateBtn = Ti.UI.createButton({
@@ -119,7 +119,7 @@ streamToggleBtn.addEventListener("click", function() {
   };
   
   if (streaming) {
-    device.removeEventListener("stream", listener);
+    device.removeAllListeners("stream"); // removeEventListener not firing on Android
     streamToggleBtn.title = "Start Streaming";
     streaming = false;
   }

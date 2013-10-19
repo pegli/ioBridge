@@ -2,8 +2,8 @@ var iobridge = require('appersonlabs.iobridge');
 Ti.API.info("module is => " + iobridge);
 
 var device = iobridge.createDevice({
-  apikey: "A4VPPSNH49U6KGBP",
-  serial: "0002C312381E9E86"
+  apikey: "your-api-key-here",
+  serial: "your-board-serial-here"
 });
 
 // open a single window
